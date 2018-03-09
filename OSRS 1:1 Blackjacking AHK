@@ -1,0 +1,40 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+q::
+Click right
+return
+
+w::
+MouseMove, 0, 85, 1, R
+return
+
+e::
+Click left
+return
+
+r::
+MouseMove, 0, -85, 1, R
+return
+
+p::
+Click right
+return
+
+o::
+MouseMove, 0, 55, 1, R
+return
+
+i::
+Click left
+return
+
+u::
+MouseMove, 0, -55, 1, R
+return
+
+`::
+suspend
+return
