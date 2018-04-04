@@ -1,0 +1,28 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+#Hold shift the eniter time to perform fast inventory dropping. 
+#At the end of the row hit _ and it will drop the last item in row and drop to next row.
+
+`::
+suspend
+return
+
++::
+Click 
+MouseMove 42, 0, 1, R
+return
+
+_::
+Click
+MouseMove 0, 36, 1, R
+return
+
+)::
+Click
+MouseMove -42, 0, 1, R
+return
+
+return
